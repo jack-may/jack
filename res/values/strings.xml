@@ -1,0 +1,21 @@
+<resources>
+
+    <string name="app_name">校讯通</string>
+    <string name="title_activity_main">校讯通</string>
+    <string name="shops">跳淘淘</string>
+	<string name="learns_word">成绩查询</string>
+	<string name="shops_word">二手交易</string>
+	<string name="teachers_word">教师联系方式</string>
+	<string name="lessons_word">课程表</string>
+	<string name="lives_word">校园生活</string>
+	<string name="things_word">校园信息板</string>
+	<string name="shops_shop_live">生活用品</string>
+	<string name="shops_shop_students">学习用品</string>
+	<string name="shops_shop_books">书籍</string>
+	<string name="shops_shop_electricty">电子产品</string>
+	<string name="shops_shop_accessories">小型物件</string>
+	<string name="shops_shop_add">卖东西</string>
+	<string name="shops_shop_check">查看你的在售商品</string>
+	<string name="res">返回</string> 
+	<string name="oks">确定</string>
+</resources>
