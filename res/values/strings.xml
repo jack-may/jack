@@ -16,6 +16,8 @@
 	<string name="shops_shop_accessories">小型物件</string>
 	<string name="shops_shop_add">卖东西</string>
 	<string name="shops_shop_check">查看你的在售商品</string>
+	<string name="teachersearch1">按教师姓名查询</string>
+	<string name="teachersearch2">按所在班级查询</string>
 	<string name="res">返回</string> 
 	<string name="oks">确定</string>
 </resources>

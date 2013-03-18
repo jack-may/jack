@@ -19,7 +19,7 @@
 		        android:layout_marginRight="5dp"
 		        android:layout_marginTop="5dp"
 		        android:drawableTop="@drawable/menu_learn"
-		        android:text="@string/learns_word" />"
+		        android:text="@string/learns_word" />
 		
 		    <TextView
 		        android:id="@+id/menu_s"
@@ -63,7 +63,7 @@
 		        android:layout_marginRight="6dp"
 		        android:layout_marginTop="5dp"
 		        android:drawableTop="@drawable/menu_lessons"
-		        android:text="@string/teachers_word" />"
+		        android:text="@string/lessons_word" />
 			
 	    </TableRow>
 	    

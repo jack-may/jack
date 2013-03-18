@@ -27,11 +27,12 @@ public final class R {
     }
     public static final class id {
         public static final int RelativeLayout1=0x7f080006;
-        public static final int accessories_things=0x7f080018;
-        public static final int books=0x7f080014;
+        public static final int accessories_things=0x7f080019;
+        public static final int books=0x7f080015;
         public static final int classroom_detail_item_tableRow=0x7f08000f;
-        public static final int el_things=0x7f080017;
-        public static final int live_things=0x7f080015;
+        public static final int el_things=0x7f080018;
+        public static final int lessonsearch=0x7f080013;
+        public static final int live_things=0x7f080016;
         public static final int menu_lea=0x7f080000;
         public static final int menu_les=0x7f080003;
         public static final int menu_li=0x7f080004;
@@ -41,13 +42,15 @@ public final class R {
         public static final int numb=0x7f080008;
         public static final int ok_button=0x7f08000e;
         public static final int re_button=0x7f08000d;
-        public static final int shop_add=0x7f080019;
-        public static final int shop_check=0x7f08001a;
-        public static final int shop_re=0x7f08001b;
+        public static final int search_name=0x7f08001a;
+        public static final int searchbutton_name=0x7f08001b;
+        public static final int shop_add=0x7f08001c;
+        public static final int shop_check=0x7f08001d;
+        public static final int shop_re=0x7f08001e;
         public static final int spinner1=0x7f08000a;
         public static final int spinner2=0x7f08000c;
-        public static final int stud_things=0x7f080016;
-        public static final int textView1=0x7f080013;
+        public static final int stud_things=0x7f080017;
+        public static final int textView1=0x7f080014;
         public static final int textview1=0x7f080007;
         public static final int textview2=0x7f080009;
         public static final int textview3=0x7f08000b;
@@ -59,7 +62,9 @@ public final class R {
         public static final int activity_main=0x7f030000;
         public static final int learn_main=0x7f030001;
         public static final int learns_item=0x7f030002;
-        public static final int shops_main=0x7f030003;
+        public static final int lessons_main=0x7f030003;
+        public static final int shops_main=0x7f030004;
+        public static final int teachers_main=0x7f030005;
     }
     public static final class menu {
         public static final int shops_menu=0x7f070000;
@@ -69,8 +74,8 @@ public final class R {
         public static final int learns_word=0x7f050003;
         public static final int lessons_word=0x7f050006;
         public static final int lives_word=0x7f050007;
-        public static final int oks=0x7f050011;
-        public static final int res=0x7f050010;
+        public static final int oks=0x7f050013;
+        public static final int res=0x7f050012;
         public static final int shops=0x7f050002;
         public static final int shops_shop_accessories=0x7f05000d;
         public static final int shops_shop_add=0x7f05000e;
@@ -81,6 +86,8 @@ public final class R {
         public static final int shops_shop_students=0x7f05000a;
         public static final int shops_word=0x7f050004;
         public static final int teachers_word=0x7f050005;
+        public static final int teachersearch1=0x7f050010;
+        public static final int teachersearch2=0x7f050011;
         public static final int things_word=0x7f050008;
         public static final int title_activity_main=0x7f050001;
     }

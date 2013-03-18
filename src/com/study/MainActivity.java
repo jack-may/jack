@@ -48,7 +48,7 @@ public class MainActivity extends Activity {
         shops.setOnClickListener(new OnClickListener(){
         	
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
+				// TODO Auto-generated method stub 
 				Intent shopintent = new Intent(MainActivity.this,shopsActivity.class);
 				startActivityForResult(shopintent,1);
 				
@@ -59,6 +59,8 @@ public class MainActivity extends Activity {
         	
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
+				Intent teacherintent = new Intent(MainActivity.this,teachersActivity.class);
+				startActivityForResult(teacherintent,1);
 			}
         });
         
@@ -66,7 +68,8 @@ public class MainActivity extends Activity {
         	
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-
+				Intent lessonsintent = new Intent(MainActivity.this,lessonsActivity.class);
+				startActivityForResult(lessonsintent,1);
 			}
         });
         
