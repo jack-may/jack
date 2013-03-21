@@ -63,10 +63,10 @@ public class MainActivity extends Activity {
     	    	  // TODO Auto-generated method stub	
     	    	  switch (event.getAction()) { 	  
     	    	        case MotionEvent.ACTION_DOWN:	 
-    	    	        	learns.setTextColor(Color.argb(155, 0, 255, 0));
+    	    	        	shops.setTextColor(Color.argb(155, 0, 255, 0));
     	    	            break;
     	    	        case MotionEvent.ACTION_UP:
-    	    	        	learns.setTextColor(Color.argb(255, 255, 255, 255));
+    	    	        	shops.setTextColor(Color.argb(255, 255, 255, 255));
     	    	        	Intent shopintent = new Intent(MainActivity.this,shopsActivity.class);
     	    				startActivityForResult(shopintent,1);
     	    	            break;
@@ -82,10 +82,10 @@ public class MainActivity extends Activity {
   	    	  // TODO Auto-generated method stub	
   	    	  switch (event.getAction()) { 	  
   	    	        case MotionEvent.ACTION_DOWN:	 
-  	    	        	learns.setTextColor(Color.argb(155, 0, 255, 0));
+  	    	        	teachers.setTextColor(Color.argb(155, 0, 255, 0));
   	    	            break;
   	    	        case MotionEvent.ACTION_UP:
-  	    	        	learns.setTextColor(Color.argb(255, 255, 255, 255));
+  	    	        	teachers.setTextColor(Color.argb(255, 255, 255, 255));
   	    	        	Intent teacherintent = new Intent(MainActivity.this,teachersActivity.class);
   	    	        	startActivityForResult(teacherintent,2);
   	    	            break;
@@ -101,10 +101,10 @@ public class MainActivity extends Activity {
   	    	  // TODO Auto-generated method stub	
   	    	  switch (event.getAction()) { 	  
   	    	        case MotionEvent.ACTION_DOWN:	 
-  	    	        	learns.setTextColor(Color.argb(155, 0, 255, 0));
+  	    	        	lessons.setTextColor(Color.argb(155, 0, 255, 0));
   	    	            break;
   	    	        case MotionEvent.ACTION_UP:
-  	    	        	learns.setTextColor(Color.argb(255, 255, 255, 255));
+  	    	        	lessons.setTextColor(Color.argb(255, 255, 255, 255));
   	    	        	Intent lessonsintent = new Intent(MainActivity.this,lessonsActivity.class);
   	    	        	startActivityForResult(lessonsintent,3);
   	    	            break;
@@ -120,10 +120,10 @@ public class MainActivity extends Activity {
   	    	  // TODO Auto-generated method stub	
   	    	  switch (event.getAction()) { 	  
   	    	        case MotionEvent.ACTION_DOWN:	 
-  	    	        	learns.setTextColor(Color.argb(155, 0, 255, 0));
+  	    	        	lives.setTextColor(Color.argb(155, 0, 255, 0));
   	    	            break;
   	    	        case MotionEvent.ACTION_UP:
-  	    	        	learns.setTextColor(Color.argb(255, 255, 255, 255));
+  	    	        	lives.setTextColor(Color.argb(255, 255, 255, 255));
   	    	        	Intent liveintent = new Intent(MainActivity.this,livesActivity.class);
   	    				startActivityForResult(liveintent,4);
   	    	            break;
@@ -139,10 +139,10 @@ public class MainActivity extends Activity {
   	    	  // TODO Auto-generated method stub	
   	    	  switch (event.getAction()) { 	  
   	    	        case MotionEvent.ACTION_DOWN:	 
-  	    	        	learns.setTextColor(Color.argb(155, 0, 255, 0));
+  	    	        	things.setTextColor(Color.argb(155, 0, 255, 0));
   	    	            break;
   	    	        case MotionEvent.ACTION_UP:
-  	    	        	learns.setTextColor(Color.argb(255, 255, 255, 255));
+  	    	        	things.setTextColor(Color.argb(255, 255, 255, 255));
   	    	        	Intent thingintent = new Intent(MainActivity.this,thingsActivity.class);
   	    				startActivityForResult(thingintent,5);
   	    	            break;
