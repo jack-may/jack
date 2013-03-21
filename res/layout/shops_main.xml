@@ -9,8 +9,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
-        android:text="@string/shops"
-        android:drawableLeft="@drawable/shops_picture"
+        android:text="@string/shops_word"
         android:textColor="#F6A901"
         android:textSize="30dp" />
 

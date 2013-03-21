@@ -1,13 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#30B1E8"
     android:orientation="vertical" >
     
     <TextView 
-        android:id="@+id/lessonsearch"
+        android:id="@+id/lesson_search_depart"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#F6ECCB"
+        android:text="@string/lesson_depart"/>   
+        
+    <Spinner
+        android:id="@+id/lesson_depart"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lesson_search_depart"/>
     
+    <TextView 
+        android:id="@+id/lesson_search_class"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lesson_depart"
+        android:textSize="20dp"
+        android:textColor="#F6ECCB"
+        android:text="@string/lesson_class"/>
+    
+   	<Button
+   	    android:id="@+id/lesson_re"
+   	    android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+     	android:textSize="20dp"
+        android:textColor="#F6ECCB"
+        android:text="@string/res" />
 
-</LinearLayout>
+   	<Button
+   	    android:id="@+id/lesson_ok"
+   	    android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/lesson_re"
+        android:layout_marginBottom="20dp"
+        android:textSize="20dp"
+        android:textColor="#F6ECCB"
+        android:text="@string/oks"/>
+   	
+</RelativeLayout>

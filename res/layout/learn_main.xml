@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:textColor="#F6ECCB"
         android:textSize="20dp" />
 
     <EditText
@@ -29,6 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/numb"
+        android:textColor="#F6ECCB"
         android:textSize="20dp" />
 
     <Spinner
@@ -44,6 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/spinner1"
+        android:textColor="#F6ECCB"
         android:textSize="20dp" />
 
     <Spinner

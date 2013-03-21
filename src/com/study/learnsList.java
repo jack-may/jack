@@ -37,8 +37,8 @@ public class learnsList extends Activity{
         grade = (TextView) findViewById(R.id.txt_grade);
         credit = (TextView) findViewById(R.id.txt_credit);
         
-        lesson.setText(nums);
-        grade.setText(dates);
-        credit.setText(learns);
+        lesson.setText("学号：\n"+nums);
+        grade.setText("学年：\n"+dates);
+        credit.setText("学期：\n"+learns);
 	}
 }

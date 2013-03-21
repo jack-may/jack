@@ -1,10 +1,12 @@
 package com.study;
 
-import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
+import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
-import android.view.View.OnClickListener;
+import android.view.View.OnTouchListener;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.TextView;
@@ -36,58 +38,120 @@ public class MainActivity extends Activity {
         lives = (TextView) findViewById(R.id.menu_li);
         things = (TextView) findViewById(R.id.menu_th);
         
-        learns.setOnClickListener(new OnClickListener(){
-        	
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				Intent learnintent = new Intent(MainActivity.this,learnsActivity.class);
-				startActivityForResult(learnintent,0);
-			}
-        });
-
-        shops.setOnClickListener(new OnClickListener(){
-        	
-			public void onClick(View v) {
-				// TODO Auto-generated method stub 
-				Intent shopintent = new Intent(MainActivity.this,shopsActivity.class);
-				startActivityForResult(shopintent,1);
-				
-			}
-        });
-
-        teachers.setOnClickListener(new OnClickListener(){
-        	
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				Intent teacherintent = new Intent(MainActivity.this,teachersActivity.class);
-				startActivityForResult(teacherintent,1);
-			}
+        learns.setOnTouchListener(new OnTouchListener() {   
+    	    public boolean onTouch(View v, MotionEvent event) {
+    	    	  // TODO Auto-generated method stub	
+    	    	  switch (event.getAction()) { 	  
+    	    	        case MotionEvent.ACTION_DOWN:	 
+    	    	        	learns.setTextColor(Color.argb(155, 0, 255, 0));
+    	    	            break;
+    	    	        case MotionEvent.ACTION_UP:
+    	    	        	learns.setTextColor(Color.argb(255, 255, 255, 255));
+    	    				Intent learnintent = new Intent(MainActivity.this,learnsActivity.class);
+    	    				startActivityForResult(learnintent,0);
+    	    	            break;
+    	    	        default:
+    	    	            break;
+    	    	  }
+    	    	  return true;
+    	    }
         });
         
-        lessons.setOnClickListener(new OnClickListener(){
-        	
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				Intent lessonsintent = new Intent(MainActivity.this,lessonsActivity.class);
-				startActivityForResult(lessonsintent,1);
-			}
-        });
         
-        lives.setOnClickListener(new OnClickListener(){
-        	
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-
-			}
+        shops.setOnTouchListener(new OnTouchListener() {   
+    	    public boolean onTouch(View v, MotionEvent event) {
+    	    	  // TODO Auto-generated method stub	
+    	    	  switch (event.getAction()) { 	  
+    	    	        case MotionEvent.ACTION_DOWN:	 
+    	    	        	learns.setTextColor(Color.argb(155, 0, 255, 0));
+    	    	            break;
+    	    	        case MotionEvent.ACTION_UP:
+    	    	        	learns.setTextColor(Color.argb(255, 255, 255, 255));
+    	    	        	Intent shopintent = new Intent(MainActivity.this,shopsActivity.class);
+    	    				startActivityForResult(shopintent,1);
+    	    	            break;
+    	    	        default:
+    	    	            break;
+    	    	  }
+    	    	  return true;
+    	    }
         });
+
+        teachers.setOnTouchListener(new OnTouchListener() {   
+    	    public boolean onTouch(View v, MotionEvent event) {
+  	    	  // TODO Auto-generated method stub	
+  	    	  switch (event.getAction()) { 	  
+  	    	        case MotionEvent.ACTION_DOWN:	 
+  	    	        	learns.setTextColor(Color.argb(155, 0, 255, 0));
+  	    	            break;
+  	    	        case MotionEvent.ACTION_UP:
+  	    	        	learns.setTextColor(Color.argb(255, 255, 255, 255));
+  	    	        	Intent teacherintent = new Intent(MainActivity.this,teachersActivity.class);
+  	    	        	startActivityForResult(teacherintent,2);
+  	    	            break;
+  	    	        default:
+  	    	            break;
+  	    	  }
+  	    	  return true;
+  	    }
+      });
         
-        things.setOnClickListener(new OnClickListener(){
-        	
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-
-			}
-        });
+        lessons.setOnTouchListener(new OnTouchListener() {   
+    	    public boolean onTouch(View v, MotionEvent event) {
+  	    	  // TODO Auto-generated method stub	
+  	    	  switch (event.getAction()) { 	  
+  	    	        case MotionEvent.ACTION_DOWN:	 
+  	    	        	learns.setTextColor(Color.argb(155, 0, 255, 0));
+  	    	            break;
+  	    	        case MotionEvent.ACTION_UP:
+  	    	        	learns.setTextColor(Color.argb(255, 255, 255, 255));
+  	    	        	Intent lessonsintent = new Intent(MainActivity.this,lessonsActivity.class);
+  	    	        	startActivityForResult(lessonsintent,3);
+  	    	            break;
+  	    	        default:
+  	    	            break;
+  	    	  }
+  	    	  return true;
+  	    }
+      });
+        
+        lives.setOnTouchListener(new OnTouchListener() {   
+    	    public boolean onTouch(View v, MotionEvent event) {
+  	    	  // TODO Auto-generated method stub	
+  	    	  switch (event.getAction()) { 	  
+  	    	        case MotionEvent.ACTION_DOWN:	 
+  	    	        	learns.setTextColor(Color.argb(155, 0, 255, 0));
+  	    	            break;
+  	    	        case MotionEvent.ACTION_UP:
+  	    	        	learns.setTextColor(Color.argb(255, 255, 255, 255));
+  	    	        	Intent liveintent = new Intent(MainActivity.this,livesActivity.class);
+  	    				startActivityForResult(liveintent,4);
+  	    	            break;
+  	    	        default:
+  	    	            break;
+  	    	  }
+  	    	  return true;
+  	    }
+      });
+        
+        things.setOnTouchListener(new OnTouchListener() {   
+    	    public boolean onTouch(View v, MotionEvent event) {
+  	    	  // TODO Auto-generated method stub	
+  	    	  switch (event.getAction()) { 	  
+  	    	        case MotionEvent.ACTION_DOWN:	 
+  	    	        	learns.setTextColor(Color.argb(155, 0, 255, 0));
+  	    	            break;
+  	    	        case MotionEvent.ACTION_UP:
+  	    	        	learns.setTextColor(Color.argb(255, 255, 255, 255));
+  	    	        	Intent thingintent = new Intent(MainActivity.this,thingsActivity.class);
+  	    				startActivityForResult(thingintent,5);
+  	    	            break;
+  	    	        default:
+  	    	            break;
+  	    	  }
+  	    	  return true;
+  	    }
+      });
     
     }
 

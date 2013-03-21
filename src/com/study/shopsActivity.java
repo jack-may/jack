@@ -2,12 +2,14 @@ package com.study;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
-import android.view.View.OnClickListener;
+import android.view.View.OnTouchListener;
 import android.view.Window;
 import android.view.WindowManager;
 import android.view.animation.Animation;
@@ -73,51 +75,102 @@ public class shopsActivity extends Activity{
 			}
 		});
 		
-		lives.setOnClickListener(new OnClickListener(){
-
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				Intent intent = new Intent(shopsActivity.this,shoplives.class);
-				startActivityForResult(intent,0);
-			}
-		});
+		lives.setOnTouchListener(new OnTouchListener() {   
+    	    public boolean onTouch(View v, MotionEvent event) {
+  	    	  // TODO Auto-generated method stub	
+  	    	  switch (event.getAction()) { 	  
+  	    	        case MotionEvent.ACTION_DOWN:	 
+  	    	        	lives.setBackgroundColor(Color.argb(155, 0, 255, 0));
+  	    	            break;
+  	    	        case MotionEvent.ACTION_UP:
+  	    	        	lives.setBackgroundColor(Color.argb(255, 255, 127, 39));
+  	    	        	Intent intent = new Intent(shopsActivity.this,shoplives.class);
+  	  				startActivityForResult(intent,0);
+  	    	            break;
+  	    	        default:
+  	    	            break;
+  	    	  }
+  	    	  return true;
+  	    }
+      });
+				
+		students.setOnTouchListener(new OnTouchListener() {   
+    	    public boolean onTouch(View v, MotionEvent event) {
+    	    	  // TODO Auto-generated method stub	
+    	    	  switch (event.getAction()) { 	  
+    	    	        case MotionEvent.ACTION_DOWN:	 
+    	    	        	students.setBackgroundColor(Color.argb(155, 0, 255, 0));
+    	    	            break;
+    	    	        case MotionEvent.ACTION_UP:
+    	    	        	students.setBackgroundColor(Color.argb(255, 255, 127, 39));
+    	    	        	Intent intent =new Intent(shopsActivity.this,shopstudys.class);
+    	    				startActivityForResult(intent,1);
+    	    	            break;
+    	    	        default:
+    	    	            break;
+    	    	  }
+    	    	  return true;
+    	    }
+        });
 		
-		students.setOnClickListener(new OnClickListener(){
-
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				Intent intent =new Intent(shopsActivity.this,shopstudys.class);
-				startActivityForResult(intent,1);
-			}
-		});
+		books.setOnTouchListener(new OnTouchListener() {   
+    	    public boolean onTouch(View v, MotionEvent event) {
+  	    	  // TODO Auto-generated method stub	
+  	    	  switch (event.getAction()) { 	  
+  	    	        case MotionEvent.ACTION_DOWN:	 
+  	    	        	books.setBackgroundColor(Color.argb(155, 0, 255, 0));
+  	    	            break;
+  	    	        case MotionEvent.ACTION_UP:
+  	    	        	books.setBackgroundColor(Color.argb(255, 255, 127, 39));
+  	    	        	Intent intent = new Intent(shopsActivity.this,shopbooks.class);
+  	    	        	startActivityForResult(intent,2);
+  	    	            break;
+  	    	        default:
+  	    	            break;
+  	    	  }
+  	    	  return true;
+  	    }
+      });
+				
 		
-		books.setOnClickListener(new OnClickListener(){
-
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				Intent intent = new Intent(shopsActivity.this,shopbooks.class);
-				startActivityForResult(intent,2);
-			}
-		});
-		
-		electrictys.setOnClickListener(new OnClickListener(){
-
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				Intent intent = new Intent(shopsActivity.this,shopelectritys.class);
-				startActivityForResult(intent,3);
-			}
-		});
-		
-		accessoriess.setOnClickListener(new OnClickListener(){
-
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				Intent intent = new Intent(shopsActivity.this,shopaccessories.class);
-				startActivityForResult(intent,4);
-			}
-			
-		});
+		electrictys.setOnTouchListener(new OnTouchListener() {   
+    	    public boolean onTouch(View v, MotionEvent event) {
+  	    	  // TODO Auto-generated method stub	
+  	    	  switch (event.getAction()) { 	  
+  	    	        case MotionEvent.ACTION_DOWN:	 
+  	    	        	electrictys.setBackgroundColor(Color.argb(155, 0, 255, 0));
+  	    	            break;
+  	    	        case MotionEvent.ACTION_UP:
+  	    	        	electrictys.setBackgroundColor(Color.argb(255, 255, 127, 39));
+  	    	        	Intent intent = new Intent(shopsActivity.this,shopelectritys.class);
+  	    	        	startActivityForResult(intent,3);
+  	    	            break;
+  	    	        default:
+  	    	            break;
+  	    	  }
+  	    	  return true;
+  	    }
+      });
+				
+		accessoriess.setOnTouchListener(new OnTouchListener() {   
+    	    public boolean onTouch(View v, MotionEvent event) {
+    	    	  // TODO Auto-generated method stub	
+    	    	  switch (event.getAction()) { 	  
+    	    	        case MotionEvent.ACTION_DOWN:	 
+    	    	        	accessoriess.setBackgroundColor(Color.argb(155, 0, 255, 0));
+    	    	            break;
+    	    	        case MotionEvent.ACTION_UP:
+    	    	        	accessoriess.setBackgroundColor(Color.argb(255, 255, 127, 39));
+    	    	        	Intent intent = new Intent(shopsActivity.this,shopaccessories.class);
+    	    				startActivityForResult(intent,4);
+    	    	            break;
+    	    	        default:
+    	    	            break;
+    	    	  }
+    	    	  return true;
+    	    }
+        });
+				
     }
     
 	@Override
