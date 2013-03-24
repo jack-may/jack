@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <lint>
-    <issue id="ExtraText">
+    <issue id="ExtraText" severity="ignore">
         <ignore path="res\layout\teachers_main.xml" />
     </issue>
     <issue id="NewApi">
@@ -9,7 +9,7 @@
     <issue id="TextFields">
         <ignore path="res\layout\teachers_main.xml" />
     </issue>
-    <issue id="UselessParent">
+    <issue id="UselessParent" severity="ignore">
         <ignore path="res\layout\learns_item.xml" />
     </issue>
 </lint>

@@ -3,7 +3,7 @@
     <string name="app_name">校讯通</string>
     <string name="title_activity_main">校讯通</string>
 	<string name="learns_word">成绩查询</string>
-	<string name="shops_word">淘宝</string>
+	<string name="shops_word">淘哈哈</string>
 	<string name="teachers_word">教师联系方式</string>
 	<string name="lessons_word">课程表</string>
 	<string name="lives_word">校园生活</string>
@@ -19,6 +19,11 @@
 	<string name="teacher_department">系部模糊查询</string>
 	<string name="lesson_depart">请选择院系：</string>
 	<string name="lesson_class">请选择班级：</string>
+	<string name="live_feedback">校园反馈</string>
+	<string name="live_news">时事新闻</string>
+	<string name="live_happy">娱乐活动</string>
+	<string name="thing_collage">院级信息板</string>
+	<string name="thing_depart">系部信息板</string>
 	<string name="res">返回</string> 
 	<string name="oks">确定</string>
 </resources>

@@ -53,6 +53,12 @@
         <activity
             android:name="lessonsActivity"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+        <activity
+            android:name="livesActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+        <activity
+            android:name="thingsActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
     </application>
 
 </manifest>
