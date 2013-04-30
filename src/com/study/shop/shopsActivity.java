@@ -1,4 +1,7 @@
-package com.study;
+package com.study.shop;
+
+
+import com.study.R;
 
 import android.app.Activity;
 import android.content.Intent;

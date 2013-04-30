@@ -1,9 +1,11 @@
-package com.study;
+package com.study.thing;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
+
+import com.study.R;
 
 public class thingsActivity extends Activity{
 

@@ -1,5 +1,12 @@
 package com.study;
 
+import com.study.learn.learnsActivity;
+import com.study.lesson.lessonsActivity;
+import com.study.live.livesActivity;
+import com.study.shop.shopsActivity;
+import com.study.teacher.teachersActivity;
+import com.study.thing.thingsActivity;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;

@@ -1,6 +1,8 @@
-package com.study;
+package com.study.learn;
 
 import java.util.Calendar;
+
+import com.study.R;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -118,7 +120,7 @@ public class learnsActivity extends Activity {
 					// TODO Auto-generated method stub
 				Intent intent = new Intent(learnsActivity.this,learnsList.class);
 				startActivityForResult(intent,0);
-				learnsList.stuy(num.getText().toString(), spin1.getSelectedItem().toString(), spin2.getSelectedItem().toString());
+				learnsList.stud(num.getText().toString(), spin1.getSelectedItem().toString(), spin2.getSelectedItem().toString());
 				}
 	        });
 	        

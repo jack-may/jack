@@ -1,5 +1,6 @@
-package com.study;
+package com.study.teacher;
 
+import com.study.R;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
