@@ -24,40 +24,40 @@
         </activity>
         
         <activity 
-            android:name="learnsActivity"
+            android:name="com.study.learn.learnsActivity"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" ></activity>
         <activity
-            android:name="learnsList"
+            android:name="com.study.learn.learnsList"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>  
         <activity 
-            android:name="shopsActivity"
+            android:name="com.study.shop.shopsActivity"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
         <activity
-            android:name="shoplives"
+            android:name="com.study.shop.shoplives"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
         <activity
-            android:name="shopstudys"
+            android:name="com.study.shop.shopstudys"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
         <activity
-            android:name="shopbooks"
+            android:name="com.study.shop.shopbooks"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
         <activity
-            android:name="shopelectrictys"
+            android:name="com.study.shop.shopelectrictys"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
         <activity
-            android:name="shopaccessories"
+            android:name="com.study.shop.shopaccessories"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
         <activity
-            android:name="teachersActivity"
+            android:name="com.study.teacher.teachersActivity"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
         <activity
-            android:name="lessonsActivity"
+            android:name="com.study.lesson.lessonsActivity"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
         <activity
-            android:name="livesActivity"
+            android:name="com.study.live.livesActivity"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
         <activity
-            android:name="thingsActivity"
+            android:name="com.study.thing.thingsActivity"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
     </application>
 
