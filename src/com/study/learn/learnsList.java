@@ -37,9 +37,9 @@ public class learnsList extends Activity {
         years = (TextView) findViewById(R.id.txt_grade);
         terms = (TextView) findViewById(R.id.txt_credit);
         
-        numb.setText(stud_num);
-        years.setText(stud_year);
-        terms.setText(stud_term);
+        numb.setText("学号：/n"+stud_num);
+        years.setText("学年：/n"+stud_year);
+        terms.setText("学期：/n"+stud_term);
 	}
 }
 
